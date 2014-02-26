@@ -55,7 +55,7 @@ public final class Bitcoins implements Serializable {
 
    /**
     * @param btc
-    *           double Value in full bitcoins. must be an exact represenatation
+    *           double Value in full bitcoins. must be an exact represntation
     * @return bitcoin value representation
     * @throws IllegalArgumentException
     *            if the given double value loses precision when converted to
