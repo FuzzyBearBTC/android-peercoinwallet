@@ -22,7 +22,7 @@ import java.math.BigInteger;
 import java.math.RoundingMode;
 
 /**
- * a core Bitcoin Value representation, caputuring many domain specific aspects
+ * a core Bitcoin Value representation, capturing many domain specific aspects
  * of it. introduced to reduce the ambiguity when dealing with double,
  * BigInteger, long, or even worse, integer representations
  * 
