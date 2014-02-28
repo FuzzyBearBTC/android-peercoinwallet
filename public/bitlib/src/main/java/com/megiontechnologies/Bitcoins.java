@@ -23,7 +23,7 @@ import java.math.RoundingMode;
 
 /**
  * a core Bitcoin Value representation, capturing many domain specific aspects
- * of it. Introduced to reduce the ambiguity when dealing with double,
+ * Of it. Introduced to reduce the ambiguity when dealing with double,
  * BigInteger, long, or even worse, integer representations
  * 
  * @author apetersson
@@ -129,7 +129,7 @@ public final class Bitcoins implements Serializable {
 
    @Override
    public String toString() {
-      // this could surely be implemented faster without using BigDecimal. but it
+      // this could surely be implemented faster without using BigDecimal. But it
       // is good enough for now.
       // this could be cached
       return toBigDecimal().toPlainString();
