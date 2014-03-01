@@ -47,3 +47,5 @@ public class ServiceTaskStatus implements Serializable {
       this.progress = progress;
    }
 }
+
+
