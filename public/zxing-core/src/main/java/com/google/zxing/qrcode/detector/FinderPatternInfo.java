@@ -47,3 +47,5 @@ public final class FinderPatternInfo {
   }
 
 }
+
+
