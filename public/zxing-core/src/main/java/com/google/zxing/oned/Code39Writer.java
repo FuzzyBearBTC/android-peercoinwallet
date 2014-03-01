@@ -87,3 +87,4 @@ public final class Code39Writer extends OneDimensionalCodeWriter {
   }
 
 }
+
