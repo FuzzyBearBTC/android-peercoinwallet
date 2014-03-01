@@ -45,3 +45,5 @@ public class Image {
         System.err.println("Usage: " + Image.class.getName() + " <width> <height> <file>");
     }
 }
+
+
