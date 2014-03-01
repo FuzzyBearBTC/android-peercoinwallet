@@ -114,3 +114,4 @@ public final class VEventResultParser extends ResultParser {
   }
 
 }
+
