@@ -58,3 +58,5 @@ public class ErrorCollectionResponse extends ApiObject {
       return ERROR_RESPONSE_TYPE;
    }
 }
+
+
