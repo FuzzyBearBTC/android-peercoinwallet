@@ -140,3 +140,5 @@ public final class RGBLuminanceSource extends LuminanceSource {
   }
 
 }
+
+
