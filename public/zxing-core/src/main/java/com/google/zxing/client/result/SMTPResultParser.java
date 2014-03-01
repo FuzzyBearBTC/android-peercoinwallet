@@ -51,3 +51,5 @@ public final class SMTPResultParser extends ResultParser {
     return new EmailAddressParsedResult(emailAddress, subject, body, mailtoURI);
   }
 }
+
+
