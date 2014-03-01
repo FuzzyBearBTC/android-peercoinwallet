@@ -36,3 +36,4 @@ public final class ChecksumException extends ReaderException {
   }
 
 }
+
