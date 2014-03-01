@@ -39,3 +39,4 @@ final class Pair extends DataCharacter {
   }
 
 }
+
