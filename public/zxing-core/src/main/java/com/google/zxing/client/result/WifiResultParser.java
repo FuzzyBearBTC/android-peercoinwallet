@@ -49,3 +49,4 @@ public final class WifiResultParser extends ResultParser {
     return new WifiParsedResult(type, ssid, pass, hidden);
   }
 }
+
