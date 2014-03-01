@@ -76,3 +76,5 @@ public final class BarcodeMatrix {
     return matrixOut;
   }
 }
+
+
