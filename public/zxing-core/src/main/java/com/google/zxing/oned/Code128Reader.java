@@ -495,3 +495,5 @@ public final class Code128Reader extends OneDReader {
   }
 
 }
+
+
