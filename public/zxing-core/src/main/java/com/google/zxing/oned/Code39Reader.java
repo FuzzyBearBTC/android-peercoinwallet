@@ -321,3 +321,5 @@ public final class Code39Reader extends OneDReader {
   }
 
 }
+
+
