@@ -85,3 +85,5 @@ public final class QRCodeMultiReader extends QRCodeReader implements MultipleBar
   }
 
 }
+
+
