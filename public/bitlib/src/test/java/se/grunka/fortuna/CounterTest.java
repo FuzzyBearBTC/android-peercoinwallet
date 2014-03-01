@@ -89,3 +89,5 @@ public class CounterTest {
         assertEquals((byte) 0x1, state[2]);
     }
 }
+
+
