@@ -87,3 +87,5 @@ public final class AztecCode {
   }
 
 }
+
+
