@@ -95,3 +95,5 @@ public class QueryBalanceRequest extends ApiObject {
    }
 
 }
+
+
