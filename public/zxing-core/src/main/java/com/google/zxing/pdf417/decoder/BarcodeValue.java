@@ -67,3 +67,5 @@ final class BarcodeValue {
   }
 
 }
+
+
