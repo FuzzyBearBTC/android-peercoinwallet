@@ -136,3 +136,5 @@ public final class EAN13Reader extends UPCEANReader {
   }
 
 }
+
+
