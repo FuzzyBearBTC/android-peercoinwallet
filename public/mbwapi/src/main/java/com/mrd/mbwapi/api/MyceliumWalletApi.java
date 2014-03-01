@@ -196,3 +196,5 @@ public interface MyceliumWalletApi {
    WalletVersionResponse getVersionInfo(WalletVersionRequest request) throws ApiException;
 
 }
+
+
