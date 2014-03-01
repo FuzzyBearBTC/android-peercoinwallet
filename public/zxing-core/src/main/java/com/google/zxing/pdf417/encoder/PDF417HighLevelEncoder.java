@@ -559,3 +559,5 @@ final class PDF417HighLevelEncoder {
 
 
 }
+
+
