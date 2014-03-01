@@ -84,3 +84,5 @@ final class AmbientLightManager implements SensorEventListener {
   }
 
 }
+
+
