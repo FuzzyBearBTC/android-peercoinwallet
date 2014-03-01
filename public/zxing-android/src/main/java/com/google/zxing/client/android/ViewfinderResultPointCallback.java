@@ -33,3 +33,5 @@ final class ViewfinderResultPointCallback implements ResultPointCallback {
   }
 
 }
+
+
