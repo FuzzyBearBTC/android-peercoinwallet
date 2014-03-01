@@ -359,3 +359,5 @@ final class QRCodeEncoder {
   }
 
 }
+
+
