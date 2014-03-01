@@ -110,3 +110,5 @@ final class UPCEANExtension2Support {
   }
 
 }
+
+
