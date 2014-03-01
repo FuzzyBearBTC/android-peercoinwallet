@@ -59,3 +59,5 @@ public final class PDF417ResultMetadata {
   }
 
 }
+
+
