@@ -57,3 +57,4 @@ public final class ProductResultParser extends ResultParser {
   }
 
 }
+
