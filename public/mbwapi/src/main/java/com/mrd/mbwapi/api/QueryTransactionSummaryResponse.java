@@ -81,3 +81,5 @@ public class QueryTransactionSummaryResponse extends ApiObject {
    }
 
 }
+
+
