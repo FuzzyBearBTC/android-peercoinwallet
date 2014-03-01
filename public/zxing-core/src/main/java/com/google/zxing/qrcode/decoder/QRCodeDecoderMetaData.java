@@ -55,3 +55,5 @@ public final class QRCodeDecoderMetaData {
   }
 
 }
+
+
