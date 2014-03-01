@@ -54,12 +54,12 @@ public class NetworkParameters implements Serializable {
    }
 
    /**
-    * The first byte of a base58 encoded bitcoin standard address.
+    * The first byte of a base58 encoded Peercoin standard address.
     */
    private int _standardAddressHeader;
 
    /**
-    * The first byte of a base58 encoded bitcoin multisig address.
+    * The first byte of a base58 encoded Peercoin multisig address.
     */
    private int _multisigAddressHeader;
 
@@ -94,19 +94,19 @@ public class NetworkParameters implements Serializable {
    }
 
    /**
-    * Get the first byte of a base58 encoded bitcoin address as an integer.
+    * Get the first byte of a base58 encoded Peercoin address as an integer.
     * 
-    * @return The first byte of a base58 encoded bitcoin address as an integer.
+    * @return The first byte of a base58 encoded Peercoin address as an integer.
     */
    public int getStandardAddressHeader() {
       return _standardAddressHeader;
    }
 
    /**
-    * Get the first byte of a base58 encoded bitcoin multisig address as an
+    * Get the first byte of a base58 encoded Peercoin multisig address as an
     * integer.
     * 
-    * @return The first byte of a base58 encoded bitcoin multisig address as an
+    * @return The first byte of a base58 encoded Peercoin multisig address as an
     *         integer.
     */
    public int getMultisigAddressHeader() {
