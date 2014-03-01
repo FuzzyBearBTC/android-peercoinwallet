@@ -352,3 +352,5 @@ public class ScanActivity extends Activity {
    }
 
 }
+
+
