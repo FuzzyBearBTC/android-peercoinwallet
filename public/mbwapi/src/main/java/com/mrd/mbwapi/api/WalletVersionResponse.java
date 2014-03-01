@@ -85,3 +85,5 @@ public class WalletVersionResponse extends ApiObject implements Serializable {
             '}';
    }
 }
+
+
