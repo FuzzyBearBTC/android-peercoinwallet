@@ -201,3 +201,5 @@ public final class Code128Writer extends OneDimensionalCodeWriter {
   }
 
 }
+
+
