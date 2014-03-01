@@ -75,3 +75,5 @@ public enum BarcodeFormat {
   UPC_EAN_EXTENSION
 
 }
+
+
