@@ -83,3 +83,5 @@ final class BitArrayBuilder {
     return binary;
   }
 }
+
+
