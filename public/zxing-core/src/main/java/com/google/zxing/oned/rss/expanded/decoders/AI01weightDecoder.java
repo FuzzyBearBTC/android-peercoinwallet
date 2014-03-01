@@ -58,3 +58,5 @@ abstract class AI01weightDecoder extends AI01decoder {
   protected abstract int checkWeight(int weight);
 
 }
+
+
