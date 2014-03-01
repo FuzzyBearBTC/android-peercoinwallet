@@ -49,3 +49,5 @@ public class RequestConst {
    public static final String BROADCAST_TRANSACTION = "broadcastTransaction";
    public static final String QUERY_EXCHANGE_RATES = "queryExchangeRates";
 }
+
+
