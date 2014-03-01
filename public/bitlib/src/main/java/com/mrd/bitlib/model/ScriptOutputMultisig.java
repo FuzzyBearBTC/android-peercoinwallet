@@ -65,3 +65,5 @@ public class ScriptOutputMultisig extends ScriptOutput implements Serializable {
    }
 
 }
+
+
