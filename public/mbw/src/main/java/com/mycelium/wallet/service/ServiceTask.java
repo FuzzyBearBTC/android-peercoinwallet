@@ -69,3 +69,5 @@ public abstract class ServiceTask<T2 extends Serializable> implements Serializab
    protected abstract void terminate();
    protected abstract ServiceTaskStatus getStatus();
 }
+
+
