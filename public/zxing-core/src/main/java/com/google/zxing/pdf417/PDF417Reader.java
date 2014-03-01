@@ -138,3 +138,5 @@ public final class PDF417Reader implements Reader, MultipleBarcodeReader {
   }
 
 }
+
+
