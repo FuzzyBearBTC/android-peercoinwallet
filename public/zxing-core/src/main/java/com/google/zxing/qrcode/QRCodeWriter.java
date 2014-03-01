@@ -118,3 +118,5 @@ public final class QRCodeWriter implements Writer {
   }
 
 }
+
+
