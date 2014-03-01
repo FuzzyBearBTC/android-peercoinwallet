@@ -436,3 +436,5 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
       viewfinderView.drawViewfinder();
    }
 }
+
+
