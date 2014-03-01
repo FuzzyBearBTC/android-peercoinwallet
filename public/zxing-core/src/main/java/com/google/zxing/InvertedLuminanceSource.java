@@ -86,3 +86,5 @@ public final class InvertedLuminanceSource extends LuminanceSource {
   }
 
 }
+
+
