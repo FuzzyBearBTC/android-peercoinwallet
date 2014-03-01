@@ -360,3 +360,5 @@ public abstract class UPCEANReader extends OneDReader {
                                       StringBuilder resultString) throws NotFoundException;
 
 }
+
+
