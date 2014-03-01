@@ -159,3 +159,4 @@ public final class DataMatrixReader implements Reader {
   }
 
 }
+
