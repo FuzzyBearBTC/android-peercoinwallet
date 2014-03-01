@@ -153,3 +153,5 @@ public final class PDF417Writer implements Writer {
   }
 
 }
+
+

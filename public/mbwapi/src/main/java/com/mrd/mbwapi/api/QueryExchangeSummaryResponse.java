@@ -74,3 +74,5 @@ public class QueryExchangeSummaryResponse extends ApiObject {
       return ApiObject.EXCHANGE_SUMMARY_RESPONSE_TYPE;
    }
 }
+
+

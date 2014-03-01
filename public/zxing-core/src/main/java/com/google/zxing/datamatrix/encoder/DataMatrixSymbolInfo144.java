@@ -33,3 +33,5 @@ final class DataMatrixSymbolInfo144 extends SymbolInfo {
   }
 
 }
+
+

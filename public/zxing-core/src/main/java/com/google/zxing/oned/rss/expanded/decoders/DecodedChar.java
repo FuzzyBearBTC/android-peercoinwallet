@@ -50,3 +50,5 @@ final class DecodedChar extends DecodedObject {
   }
 
 }
+
+

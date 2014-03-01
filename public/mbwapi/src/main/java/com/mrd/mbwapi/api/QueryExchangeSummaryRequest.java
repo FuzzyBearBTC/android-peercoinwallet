@@ -72,3 +72,5 @@ public class QueryExchangeSummaryRequest extends ApiObject {
    }
 
 }
+
+

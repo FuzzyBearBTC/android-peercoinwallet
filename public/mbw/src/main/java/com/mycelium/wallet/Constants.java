@@ -69,3 +69,5 @@ public class Constants {
    public static final String TAG = "MyceliumWallet";
    public static final String TRANSACTION_HASH_INTENT_KEY = "transaction_hash";
 }
+
+

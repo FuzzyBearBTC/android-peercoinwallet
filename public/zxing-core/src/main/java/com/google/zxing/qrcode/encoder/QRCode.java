@@ -106,3 +106,5 @@ public final class QRCode {
   }
 
 }
+
+

@@ -122,3 +122,5 @@ public final class MultiFormatUPCEANReader extends OneDReader {
   }
 
 }
+
+

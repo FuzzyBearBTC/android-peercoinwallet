@@ -82,3 +82,5 @@ public final class EAN8Writer extends UPCEANWriter {
   }
 
 }
+
+

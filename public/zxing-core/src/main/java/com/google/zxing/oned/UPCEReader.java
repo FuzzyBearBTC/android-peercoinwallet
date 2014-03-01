@@ -155,3 +155,5 @@ public final class UPCEReader extends UPCEANReader {
   }
 
 }
+
+

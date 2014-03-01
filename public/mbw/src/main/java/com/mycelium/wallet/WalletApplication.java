@@ -72,3 +72,4 @@ public class WalletApplication extends Application {
       }
    }
 }
+

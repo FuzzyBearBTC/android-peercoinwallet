@@ -93,3 +93,5 @@ public class SQLiteQueryWithBlobs {
       return _db.rawQueryWithFactory(_cursorFactory, sql, null, table);
    }
 }
+
+

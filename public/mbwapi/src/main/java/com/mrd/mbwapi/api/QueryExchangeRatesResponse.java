@@ -82,3 +82,5 @@ public class QueryExchangeRatesResponse extends ApiObject {
       return ApiObject.EXCHANGE_RATES_RESPONSE_TYPE;
    }
 }
+
+

@@ -43,3 +43,5 @@ public class FortunaTest {
         assertEquals(0, percentage);
     }
 }
+
+

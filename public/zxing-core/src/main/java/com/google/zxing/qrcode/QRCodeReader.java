@@ -207,3 +207,5 @@ public class QRCodeReader implements Reader {
   }
 
 }
+
+

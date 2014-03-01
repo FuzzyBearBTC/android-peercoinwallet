@@ -67,3 +67,5 @@ public class BroadcastTransactionResponse extends ApiObject {
       return ApiObject.BROADCAST_TRANSACTION_RESPONSE_TYPE;
    }
 }
+
+

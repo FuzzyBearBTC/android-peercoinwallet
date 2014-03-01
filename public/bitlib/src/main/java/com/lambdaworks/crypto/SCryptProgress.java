@@ -58,3 +58,5 @@ public class SCryptProgress implements Serializable{
    }
 
 }
+
+

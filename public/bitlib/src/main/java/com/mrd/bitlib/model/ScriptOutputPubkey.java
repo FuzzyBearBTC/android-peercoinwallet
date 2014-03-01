@@ -56,3 +56,5 @@ public class ScriptOutputPubkey extends ScriptOutput implements Serializable {
    }
 
 }
+
+

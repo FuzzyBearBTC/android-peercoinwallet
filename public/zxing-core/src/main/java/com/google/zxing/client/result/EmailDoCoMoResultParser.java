@@ -61,3 +61,4 @@ public final class EmailDoCoMoResultParser extends AbstractDoCoMoResultParser {
   }
 
 }
+

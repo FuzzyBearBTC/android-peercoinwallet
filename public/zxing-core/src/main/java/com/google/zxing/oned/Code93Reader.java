@@ -274,3 +274,5 @@ public final class Code93Reader extends OneDReader {
   }
 
 }
+
+

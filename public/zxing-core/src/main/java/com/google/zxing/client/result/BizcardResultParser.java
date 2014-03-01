@@ -98,3 +98,5 @@ public final class BizcardResultParser extends AbstractDoCoMoResultParser {
   }
 
 }
+
+

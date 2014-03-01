@@ -12,3 +12,5 @@ public class GeneratorTest {
         generator = new Generator();
     }
 }
+
+

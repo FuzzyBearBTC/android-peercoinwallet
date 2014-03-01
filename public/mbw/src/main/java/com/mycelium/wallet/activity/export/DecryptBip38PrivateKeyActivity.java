@@ -265,3 +265,4 @@ public class DecryptBip38PrivateKeyActivity extends Activity implements TaskExec
       }
    }
 }
+

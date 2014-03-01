@@ -78,3 +78,5 @@ public final class FinderPattern extends ResultPoint {
   }
 
 }
+
+

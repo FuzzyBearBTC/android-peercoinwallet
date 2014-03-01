@@ -92,3 +92,5 @@ public final class EAN13Writer extends UPCEANWriter {
   }
 
 }
+
+

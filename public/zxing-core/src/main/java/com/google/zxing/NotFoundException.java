@@ -36,3 +36,4 @@ public final class NotFoundException extends ReaderException {
   }
 
 }
+

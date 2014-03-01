@@ -277,3 +277,4 @@ public class ASCII85Encoder extends FilterOutputStream
 	private int		length;
 
 }
+

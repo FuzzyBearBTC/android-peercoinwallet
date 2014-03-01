@@ -68,3 +68,5 @@ public class TextNormalizer implements TextWatcher {
    }
 
 }
+
+

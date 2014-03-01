@@ -82,3 +82,5 @@ public class QueryUnspentOutputsRequest extends ApiObject {
    }
 
 }
+
+

@@ -253,3 +253,4 @@ public class TransactionDetailsActivity extends Activity {
    }
 
 }
+

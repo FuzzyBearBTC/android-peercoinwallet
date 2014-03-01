@@ -83,3 +83,5 @@ public enum ResultMetadataType {
   PDF417_EXTRA_METADATA,
 
 }
+
+

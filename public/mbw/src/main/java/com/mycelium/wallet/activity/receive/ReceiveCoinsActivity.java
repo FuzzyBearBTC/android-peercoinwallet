@@ -227,3 +227,4 @@ public class ReceiveCoinsActivity extends Activity {
    };
 
 }
+

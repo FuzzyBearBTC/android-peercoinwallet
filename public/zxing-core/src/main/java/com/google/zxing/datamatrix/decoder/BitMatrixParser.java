@@ -438,3 +438,4 @@ final class BitMatrixParser {
   }
 
 }
+

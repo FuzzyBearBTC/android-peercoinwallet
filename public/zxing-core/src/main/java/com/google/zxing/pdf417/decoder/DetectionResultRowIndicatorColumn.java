@@ -262,3 +262,5 @@ final class DetectionResultRowIndicatorColumn extends DetectionResultColumn {
   }
 
 }
+
+

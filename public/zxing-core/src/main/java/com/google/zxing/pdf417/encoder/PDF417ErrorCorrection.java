@@ -202,3 +202,5 @@ final class PDF417ErrorCorrection {
   }
 
 }
+
+

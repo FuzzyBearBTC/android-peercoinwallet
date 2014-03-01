@@ -99,3 +99,5 @@ final class MECARDContactEncoder extends ContactEncoder {
   }
 
 }
+
+

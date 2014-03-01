@@ -50,3 +50,5 @@ public final class AztecDetectorResult extends DetectorResult {
   }
 
 }
+
+

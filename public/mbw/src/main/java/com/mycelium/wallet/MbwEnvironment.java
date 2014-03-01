@@ -58,3 +58,5 @@ public abstract class MbwEnvironment {
 
    public abstract MyceliumWalletApi getMwsApi();
 }
+
+

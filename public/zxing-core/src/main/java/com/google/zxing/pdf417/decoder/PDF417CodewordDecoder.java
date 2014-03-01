@@ -111,3 +111,5 @@ final class PDF417CodewordDecoder {
   }
 
 }
+
+

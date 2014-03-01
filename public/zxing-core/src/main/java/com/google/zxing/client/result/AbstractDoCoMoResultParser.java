@@ -37,3 +37,5 @@ abstract class AbstractDoCoMoResultParser extends ResultParser {
   }
 
 }
+
+

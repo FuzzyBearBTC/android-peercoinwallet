@@ -63,3 +63,4 @@ public final class EmailAddressParsedResult extends ParsedResult {
   }
 
 }
+

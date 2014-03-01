@@ -71,3 +71,5 @@ public final class UPCAWriter implements Writer {
     return '0' + contents;
   }
 }
+
+

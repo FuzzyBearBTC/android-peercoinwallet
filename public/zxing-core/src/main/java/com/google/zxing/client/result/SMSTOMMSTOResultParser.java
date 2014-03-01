@@ -50,3 +50,4 @@ public final class SMSTOMMSTOResultParser extends ResultParser {
   }
 
 }
+

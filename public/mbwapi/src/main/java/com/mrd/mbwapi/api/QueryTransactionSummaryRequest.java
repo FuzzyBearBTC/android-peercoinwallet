@@ -80,3 +80,5 @@ public class QueryTransactionSummaryRequest extends ApiObject {
    }
 
 }
+
+

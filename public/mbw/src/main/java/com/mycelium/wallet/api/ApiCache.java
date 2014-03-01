@@ -121,3 +121,5 @@ public abstract class ApiCache {
    protected abstract TransactionInventory getTransactionInventory(Collection<Address> address);
 
 }
+
+

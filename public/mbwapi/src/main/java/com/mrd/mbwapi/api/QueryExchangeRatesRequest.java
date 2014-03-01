@@ -72,3 +72,5 @@ public class QueryExchangeRatesRequest extends ApiObject {
    }
 
 }
+
+

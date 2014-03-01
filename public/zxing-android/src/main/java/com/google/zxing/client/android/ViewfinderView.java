@@ -213,3 +213,5 @@ public final class ViewfinderView extends View {
    }
 
 }
+
+

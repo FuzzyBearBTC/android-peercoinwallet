@@ -89,3 +89,5 @@ final class VCardContactEncoder extends ContactEncoder {
   }
 
 }
+
+

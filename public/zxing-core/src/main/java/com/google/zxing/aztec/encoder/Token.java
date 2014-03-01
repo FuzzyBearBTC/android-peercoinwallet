@@ -50,3 +50,5 @@ abstract class Token {
   abstract void appendTo(BitArray bitArray, byte[] text);
 
 }
+
+

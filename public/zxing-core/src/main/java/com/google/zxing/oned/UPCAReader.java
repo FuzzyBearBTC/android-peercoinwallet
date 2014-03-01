@@ -84,3 +84,5 @@ public final class UPCAReader extends UPCEANReader {
   }
 
 }
+
+

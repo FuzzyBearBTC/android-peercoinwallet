@@ -341,3 +341,5 @@ public final class CodaBarReader extends OneDReader {
   }
 
 }
+
+

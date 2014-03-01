@@ -121,3 +121,5 @@ public class QueryTransactionInventoryExResponse extends ApiObject {
    }
 
 }
+
+

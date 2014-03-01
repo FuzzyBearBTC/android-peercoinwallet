@@ -71,3 +71,5 @@ public interface ApiCache {
     */
    TransactionSummary getTransactionSummary(Sha256Hash hash);
 }
+
+

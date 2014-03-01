@@ -127,3 +127,5 @@ public abstract class GeneralDigest {
 
    protected abstract void processBlock();
 }
+
+

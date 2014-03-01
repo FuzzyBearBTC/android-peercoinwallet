@@ -32,3 +32,5 @@ public abstract class UPCEANWriter extends OneDimensionalCodeWriter {
   }
 
 }
+
+

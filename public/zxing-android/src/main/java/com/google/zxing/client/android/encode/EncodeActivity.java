@@ -234,3 +234,5 @@ public final class EncodeActivity extends Activity {
     builder.show();
   }
 }
+
+

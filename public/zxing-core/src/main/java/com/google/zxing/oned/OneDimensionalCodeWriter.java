@@ -128,3 +128,5 @@ public abstract class OneDimensionalCodeWriter implements Writer {
   public abstract boolean[] encode(String contents);
 }
 
+
+

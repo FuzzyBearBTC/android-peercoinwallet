@@ -122,3 +122,5 @@ public class Bip38Test {
       assertEquals(decoded, "5KMKKuUmAkiNbA3DazMQiLfDq47qs8MAEThm4yL8R2PhV1ov33D");
    }
 }
+
+

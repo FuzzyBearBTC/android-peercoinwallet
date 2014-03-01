@@ -99,3 +99,5 @@ public class QueryTransactionInventoryRequest extends ApiObject {
    }
 
 }
+
+

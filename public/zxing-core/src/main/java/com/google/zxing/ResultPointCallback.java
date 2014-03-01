@@ -27,3 +27,5 @@ public interface ResultPointCallback {
   void foundPossibleResultPoint(ResultPoint point);
 
 }
+
+

@@ -4,3 +4,5 @@ public interface EntropySource {
 
     void event(EventScheduler scheduler, EventAdder adder);
 }
+
+

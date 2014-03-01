@@ -585,3 +585,5 @@ private static final class CenterComparator implements Comparator<FinderPattern>
   }
 
 }
+
+

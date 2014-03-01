@@ -82,3 +82,4 @@ public class BalanceMasterFragment extends Fragment {
       super.onResume();
    }
 }
+

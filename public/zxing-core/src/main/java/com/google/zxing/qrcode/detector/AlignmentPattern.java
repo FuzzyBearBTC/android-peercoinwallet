@@ -57,3 +57,4 @@ public final class AlignmentPattern extends ResultPoint {
   }
 
 }
+

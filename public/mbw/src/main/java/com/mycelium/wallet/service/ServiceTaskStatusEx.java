@@ -48,3 +48,5 @@ public class ServiceTaskStatusEx extends ServiceTaskStatus {
       this.state = state;
    }
 }
+
+

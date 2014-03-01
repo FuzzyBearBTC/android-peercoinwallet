@@ -56,3 +56,5 @@ final class BarcodeMetadata {
   }
 
 }
+
+

@@ -66,3 +66,5 @@ public class QueryBalanceResponse extends ApiObject {
       return ApiObject.BALANCE_RESPONSE_TYPE;
    }
 }
+
+

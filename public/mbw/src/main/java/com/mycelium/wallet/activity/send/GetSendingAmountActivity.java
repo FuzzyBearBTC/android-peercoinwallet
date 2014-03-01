@@ -479,3 +479,4 @@ public class GetSendingAmountActivity extends Activity implements NumberEntryLis
    }
 
 }
+

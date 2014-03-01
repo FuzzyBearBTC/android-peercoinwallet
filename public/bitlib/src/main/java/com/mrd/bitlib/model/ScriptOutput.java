@@ -50,3 +50,5 @@ public abstract class ScriptOutput extends Script {
    public abstract Address getAddress(NetworkParameters network);
 
 }
+
+

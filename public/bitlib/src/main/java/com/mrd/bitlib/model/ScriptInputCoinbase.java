@@ -24,3 +24,5 @@ public class ScriptInputCoinbase extends ScriptInput {
    }
 
 }
+
+

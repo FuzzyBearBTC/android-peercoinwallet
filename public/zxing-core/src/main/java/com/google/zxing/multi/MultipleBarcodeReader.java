@@ -37,3 +37,5 @@ public interface MultipleBarcodeReader {
                           Map<DecodeHintType,?> hints) throws NotFoundException;
 
 }
+
+

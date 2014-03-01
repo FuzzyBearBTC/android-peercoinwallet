@@ -41,3 +41,5 @@ public class RefreshStatus {
       this.isRunning = isRunning;
    }
 }
+
+

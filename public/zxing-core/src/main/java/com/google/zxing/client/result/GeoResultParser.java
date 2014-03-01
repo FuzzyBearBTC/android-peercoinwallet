@@ -71,3 +71,4 @@ public final class GeoResultParser extends ResultParser {
   }
 
 }
+

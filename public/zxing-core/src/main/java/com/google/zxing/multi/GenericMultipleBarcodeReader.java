@@ -168,3 +168,5 @@ public final class GenericMultipleBarcodeReader implements MultipleBarcodeReader
   }
 
 }
+
+

@@ -176,3 +176,5 @@ public final class DataMatrixWriter implements Writer {
   }
 
 }
+
+

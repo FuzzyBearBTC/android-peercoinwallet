@@ -71,3 +71,5 @@ public class ErrorCollectionRequest extends ApiObject {
       return ERROR_REQUEST_TYPE;
    }
 }
+
+

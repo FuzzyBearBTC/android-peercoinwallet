@@ -194,3 +194,5 @@ public class GlobalHistogramBinarizer extends Binarizer {
   }
 
 }
+
+

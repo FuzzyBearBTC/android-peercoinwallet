@@ -61,3 +61,5 @@ public class Dump {
         System.err.println("Will generate <megabytes> of data and output them either to <file> or stdout if <file> is not specified");
     }
 }
+
+

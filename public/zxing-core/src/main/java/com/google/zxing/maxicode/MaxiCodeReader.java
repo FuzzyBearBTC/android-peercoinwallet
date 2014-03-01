@@ -122,3 +122,5 @@ public final class MaxiCodeReader implements Reader {
   }
 
 }
+
+

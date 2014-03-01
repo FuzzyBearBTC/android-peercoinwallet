@@ -291,3 +291,5 @@ public class GetReceivingAmountActivity extends Activity implements NumberEntryL
    };
 
 }
+
+
