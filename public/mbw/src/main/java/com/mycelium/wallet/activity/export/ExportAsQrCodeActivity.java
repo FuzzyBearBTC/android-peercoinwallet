@@ -108,3 +108,4 @@ public class ExportAsQrCodeActivity extends Activity {
       alertDialog.show();
    }
 }
+
