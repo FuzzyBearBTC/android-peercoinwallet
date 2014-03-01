@@ -64,3 +64,5 @@ public class AutoPayTest {
       assertTrue(SettingsActivity.isNumber("1"));
    }
 }
+
+
