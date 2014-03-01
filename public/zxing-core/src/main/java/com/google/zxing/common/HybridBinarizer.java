@@ -235,3 +235,5 @@ public final class HybridBinarizer extends GlobalHistogramBinarizer {
   }
 
 }
+
+
