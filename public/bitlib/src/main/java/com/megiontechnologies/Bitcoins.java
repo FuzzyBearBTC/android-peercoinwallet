@@ -345,3 +345,5 @@ public final class Peercoins implements Serializable {
    }
 
 }
+
+
