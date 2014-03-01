@@ -48,3 +48,5 @@ public final class ISBNResultParser extends ResultParser {
   }
 
 }
+
+
