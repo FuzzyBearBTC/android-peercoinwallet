@@ -60,3 +60,5 @@ final class BinaryShiftToken extends Token {
   }
 
 }
+
+
