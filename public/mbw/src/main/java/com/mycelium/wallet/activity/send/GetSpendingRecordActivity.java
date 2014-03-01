@@ -136,3 +136,4 @@ public class GetSpendingRecordActivity extends Activity {
    }
 
 }
+
