@@ -109,3 +109,5 @@ public final class CodaBarWriter extends OneDimensionalCodeWriter {
   }
 }
 
+
+
