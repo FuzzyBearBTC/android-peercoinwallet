@@ -63,3 +63,5 @@ public enum WalletMode {
       return context.getResources().getString(_stringResource);
    }
 }
+
+
