@@ -73,3 +73,5 @@ public final class EAN8Reader extends UPCEANReader {
   }
 
 }
+
+
