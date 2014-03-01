@@ -295,3 +295,5 @@ final class DetectionResult {
   }
 
 }
+
+
