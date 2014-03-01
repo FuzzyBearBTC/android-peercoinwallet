@@ -109,3 +109,4 @@ public final class SMSParsedResult extends ParsedResult {
   }
 
 }
+
