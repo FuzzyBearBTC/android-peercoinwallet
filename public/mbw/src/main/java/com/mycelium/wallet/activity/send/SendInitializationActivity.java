@@ -240,3 +240,5 @@ public class SendInitializationActivity extends Activity {
       finish();
    }
 }
+
+
