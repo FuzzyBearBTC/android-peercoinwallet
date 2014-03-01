@@ -70,3 +70,5 @@ public class WalletVersionRequest extends ApiObject {
       return ApiObject.WALLET_VERSION_REQUEST_TYPE;
    }
 }
+
+
