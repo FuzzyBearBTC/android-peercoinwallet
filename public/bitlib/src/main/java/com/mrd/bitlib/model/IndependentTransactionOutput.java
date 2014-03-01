@@ -93,3 +93,5 @@ public class IndependentTransactionOutput implements Serializable {
    }
 
 }
+
+
