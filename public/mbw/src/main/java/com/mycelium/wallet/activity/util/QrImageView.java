@@ -175,3 +175,4 @@ public class QrImageView extends ImageView {
       return qrCodeText;
    }
 }
+
