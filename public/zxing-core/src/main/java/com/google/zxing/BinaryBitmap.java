@@ -137,3 +137,5 @@ public final class BinaryBitmap {
   }
 
 }
+
+
