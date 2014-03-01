@@ -77,3 +77,5 @@ public enum EncodeHintType {
   PDF417_DIMENSIONS,
 
 }
+
+
