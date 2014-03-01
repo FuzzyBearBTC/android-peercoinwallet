@@ -48,3 +48,5 @@ public final class ProductParsedResult extends ParsedResult {
   }
 
 }
+
+
