@@ -65,3 +65,5 @@ final class AI01392xDecoder extends AI01decoder {
   }
 
 }
+
+
