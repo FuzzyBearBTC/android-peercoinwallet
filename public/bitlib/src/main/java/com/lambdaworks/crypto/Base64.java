@@ -192,7 +192,7 @@ public class Base64
         return dArr;
     }
 
-    /** decodes a BASE64 encoded char array that is known to be resonably well formatted. The method is about twice as
+    /** decodes a BASE64 encoded char array that is known to be reasonably well formatted. The method is about twice as
      * fast as {@link #decode(char[])}. The preconditions are:<br>
      * + The array must have a line length of 76 chars OR no line separators at all (one line).<br>
      * + Line separator must be "\r\n", as specified in RFC 2045
@@ -282,7 +282,7 @@ public class Base64
 
         // Encode even 24-bits
         for (int s = 0, d = 0, cc = 0; s < eLen;) {
-            // Copy next three bytes into lower 24 bits of int, paying attension to sign.
+            // Copy next three bytes into lower 24 bits of int, paying attention to sign.
             int i = (sArr[s++] & 0xff) << 16 | (sArr[s++] & 0xff) << 8 | (sArr[s++] & 0xff);
 
             // Encode the int into four chars
@@ -369,7 +369,7 @@ public class Base64
     }
 
 
-    /** decodes a BASE64 encoded byte array that is known to be resonably well formatted. The method is about twice as
+    /** decodes a BASE64 encoded byte array that is known to be reasonably well formatted. The method is about twice as
      * fast as {@link #decode(byte[])}. The preconditions are:<br>
      * + The array must have a line length of 76 chars OR no line separators at all (one line).<br>
      * + Line separator must be "\r\n", as specified in RFC 2045
