@@ -376,7 +376,7 @@ public class Base64
      * + The array must not contain illegal characters within the encoded string<br>
      * + The array CAN have illegal characters at the beginning and end, those will be dealt with appropriately.<br>
      * @param sArr The source array. Length 0 will return an empty array. <code>null</code> will throw an exception.
-     * @return The decoded aray of bytes. May be of length 0.
+     * @return The decoded array of bytes. May be of length 0.
      */
     public final static byte[] decodeFast(byte[] sArr)
     {
