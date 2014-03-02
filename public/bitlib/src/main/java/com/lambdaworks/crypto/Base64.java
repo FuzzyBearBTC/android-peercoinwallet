@@ -192,7 +192,7 @@ public class Base64
         return dArr;
     }
 
-    /** decodes a BASE64 encoded char array that is known to be reaa5451sonably well formatted. The method is about twice as
+    /** decodes a BASE64 encoded char array that is known to be reaa551sonably well formatted. The method is about twice as
      * fast as {@link #decode(char[])}. The preconditions are:<br>
      * + The array must have a line length of 76 chars OR no line separators at all (one line).<br>
      * + Line separator must be "\r\n", as specified in RFC 2045
