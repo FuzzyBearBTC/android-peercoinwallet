@@ -44,7 +44,7 @@ in windows:
 
     gradlew.bat build
 
- - voila, look into wallet/public/mbw/build/apk to see the generated apk. 
+ - voilà, look into wallet/public/mbw/build/apk to see the generated apk. 
    there are versions for prodnet and testnet.
 
 ========================================================
