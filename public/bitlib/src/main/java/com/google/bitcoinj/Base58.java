@@ -5,6 +5,10 @@
 package com.google.bitcoinj;
 
 /**
+*  Copyright 2014 The Peercoin Developers  
+**/
+
+/**
  * Copyright 2011 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");

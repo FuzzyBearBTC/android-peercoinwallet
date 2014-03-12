@@ -37,7 +37,7 @@ package com.mrd.mbwapi.api;
 import com.mrd.bitlib.model.NetworkParameters;
 
 /**
- * The Mycelium Bitcoin Wallet API interface. This interface describes all the
+ * The Mycelium Peercoin Wallet API interface. This interface describes all the
  * functions implemented by the Mycelium Wallet Service.
  */
 public interface MyceliumWalletApi {
@@ -62,7 +62,7 @@ public interface MyceliumWalletApi {
    public NetworkParameters getNetwork();
 
    /**
-    * Query the balance of a set of Bitcoin addresses.
+    * Query the balance of a set of Peercoin addresses.
     * <p>
     * No more than {@link #MAXIMUM_ADDRESSES_PER_REQUEST} addresses can be
     * queried at a time.
@@ -86,7 +86,7 @@ public interface MyceliumWalletApi {
    public QueryExchangeRatesResponse queryExchangeRates(QueryExchangeRatesRequest request) throws ApiException;
 
    /**
-    * Query the unspent outputs of a set of Bitcoin addresses.
+    * Query the unspent outputs of a set of Peercoin addresses.
     * <p>
     * No more than {@link #MAXIMUM_ADDRESSES_PER_REQUEST} addresses can be
     * queried at a time.
@@ -100,7 +100,7 @@ public interface MyceliumWalletApi {
    public QueryUnspentOutputsResponse queryUnspentOutputs(QueryUnspentOutputsRequest request) throws ApiException;
 
    /**
-    * Query the inventory of active outputs of a set of Bitcoin addresses.
+    * Query the inventory of active outputs of a set of Peercoin addresses.
     * <p>
     * No more than {@link #MAXIMUM_ADDRESSES_PER_REQUEST} addresses can be
     * queried at a time. The inventory contains for each address the index of
@@ -127,7 +127,7 @@ public interface MyceliumWalletApi {
    public GetTransactionDataResponse getTransactionData(GetTransactionDataRequest request) throws ApiException;
 
    /**
-    * Query the transaction inventory of a set of Bitcoin addresses.
+    * Query the transaction inventory of a set of Peercoin addresses.
     * <p>
     * No more than {@link QueryTransactionInventoryRequest#MAXIMUM} transaction
     * IDs can be queried at a time.
@@ -142,7 +142,7 @@ public interface MyceliumWalletApi {
          throws ApiException;
 
    /**
-    * Extended query of the transaction inventory of a set of Bitcoin addresses.
+    * Extended query of the transaction inventory of a set of Peercoin addresses.
     * <p>
     * The result contains a list of transaction IDs for each address. The
     * non-extended version returns a combined result. This extended function
@@ -176,10 +176,10 @@ public interface MyceliumWalletApi {
          throws ApiException;
 
    /**
-    * Broadcast a Bitcoin transaction. The server will validate that the
+    * Broadcast a Peercoin transaction. The server will validate that the
     * transaction conforms to transaction integrity rules, is funded by unspent
     * transaction outputs, and has been signed appropriately before broadcasting
-    * it to the bitcoin network
+    * it to the Peercoin network
     * 
     * @param request
     *           a {@link BroadcastTransactionRequest} containing the transaction
