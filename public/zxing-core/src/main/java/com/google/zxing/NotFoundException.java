@@ -28,7 +28,7 @@ public final class NotFoundException extends ReaderException {
   private static final NotFoundException instance = new NotFoundException();
 
   private NotFoundException() {
-    // do nothing
+    // Do nothing
   }
 
   public static NotFoundException getNotFoundInstance() {
