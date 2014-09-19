@@ -6,14 +6,14 @@ to be eligible for testing you need to join the g+ group at
 
 https://plus.google.com/communities/102264813364583686576
 
-after joining, you need to explicitly enable beta versions for the software at
+after joining, you need to explicitly enable beta versions of the software at
 
 https://play.google.com/apps/testing/com.mycelium.wallet
 
 Building
 ========
 
-To build everything from source, simply checkout the source and build using gradle
+To build everything from source, simply check out the source and build using gradle
 on the build system you need
 
  * JDK 1.7
@@ -90,7 +90,7 @@ Credits
 =======
 Thanks to Jethro for tirelessly testing the app during beta development.
 
-Thanks to our numerous volunteer translators who provide high-quality translations in many languages. Your name should be listed here, please contact me so i know you want to be included.
+Thanks to our numerous volunteer translators who provide high-quality translations in many languages. Your name should be listed here, please contact me so I know you want to be included.
 
 Thanks to Johannes Zweng for his testing and providing pull requests for fixes.
 Thanks to all beta testers to provide early feedback.
