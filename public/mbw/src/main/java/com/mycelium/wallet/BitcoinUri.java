@@ -43,7 +43,7 @@ import com.mrd.bitlib.model.Address;
 import com.mrd.bitlib.model.NetworkParameters;
 
 /**
- * This is a crude implementation of a Bitcoin URI, but for now it works for our
+ * This is a crude implementation of a Peercoin URI, but for now it works for our
  * purpose.
  */
 public class BitcoinUri implements Serializable {
@@ -64,16 +64,16 @@ public class BitcoinUri implements Serializable {
       try {
          Uri u = Uri.parse(uri);
          String scheme = u.getScheme();
-         if (!scheme.equalsIgnoreCase("bitcoin")) {
-            // not a bitcoin URI
+         if (!scheme.equalsIgnoreCase("Peercoin")) {
+            // not a Peercoin URI
             return null;
          }
          String schemeSpecific = u.getSchemeSpecificPart();
          if (schemeSpecific.startsWith("//")) {
-            // Fix for invalid bitcoin URI on the form "bitcoin://"
+            // Fix for invalid Peercoin URI on the form "Peercoin://"
             schemeSpecific = schemeSpecific.substring(2);
          }
-         u = Uri.parse("bitcoin://" + schemeSpecific);
+         u = Uri.parse("Peercoin://" + schemeSpecific);
          if (u == null) {
             return null;
          }
