@@ -9,49 +9,49 @@ import java.util.Arrays;
  * compared to <code>sun.misc.Encoder()/Decoder()</code>.<br><br>
  *
  * On byte arrays the encoder is about 20% faster than Jakarta Commons Base64 Codec for encode and
- * about 50% faster for decoding large arrays. This implementation is about twice as fast on very small
- * arrays (&lt 30 bytes). If source/destination is a <code>String</code> this
+ * About 50% faster for decoding large arrays. This implementation is about twice as fast on very small
+ * Arrays (&lt 30 bytes). If source/destination is a <code>String</code> this
  * version is about three times as fast due to the fact that the Commons Codec result has to be recoded
- * to a <code>String</code> from <code>byte[]</code>, which is very expensive.<br><br>
+ * To a <code>String</code> from <code>byte[]</code>, which is very expensive.<br><br>
  *
  * This encode/decode algorithm doesn't create any temporary arrays as many other codecs do, it only
  * allocates the resulting array. This produces less garbage and it is possible to handle arrays twice
- * as large as algorithms that create a temporary array. (E.g. Jakarta Commons Codec). It is unknown
- * whether Sun's <code>sun.misc.Encoder()/Decoder()</code> produce temporary arrays but since performance
- * is quite low it probably does.<br><br>
+ * As large as algorithms that create a temporary array. (E.g. Jakarta Commons Codec). It is unknown
+ * Whether Sun's <code>sun.misc.Encoder()/Decoder()</code> produce temporary arrays but since performance
+ * is quite low it probably does. <br><br>
  *
  * The encoder produces the same output as the Sun one except that the Sun's encoder appends
- * a trailing line separator if the last character isn't a pad. Unclear why but it only adds to the
- * length and is probably a side effect. Both are in conformance with RFC 2045 though.<br>
- * Commons codec seem to always att a trailing line separator.<br><br>
+ * A trailing line separator if the last character isn't a pad. Unclear why but it only adds to the
+ * Length and is probably a side effect. Both are in conformance with RFC 2045 though.<br>
+ * Commons codec seem to always at the trailing line separator. <br><br>
  *
  * <b>Note!</b>
  * The encode/decode method pairs (types) come in three versions with the <b>exact</b> same algorithm and
- * thus a lot of code redundancy. This is to not create any temporary arrays for transcoding to/from different
- * format types. The methods not used can simply be commented out.<br><br>
+ * Thus a lot of code redundancy. This is to not create any temporary arrays for transcoding to/from different
+ * Format types. The methods not used can simply be commented out.<br><br>
  *
  * There is also a "fast" version of all decode methods that works the same way as the normal ones, but
- * here are a few demands on the decoded input. Normally though, these fast versions should be used if the source if
- * The input is known and it hasn't been tampered with.<br><br>
+ * Here are a few demands on the decoded input. Normally though, these fast versions should be used if the source if
+ * The input is known and it hasn't been tampered with. <br><br>
  *
- * If you find the code useful or you find a bug, please send me a note at base64 @ miginfocom . com.
+ * If you find the code useful or you find a bug, please send me a note at base64@miginfocom.com.
  *
  * License (BSD):
  * ==============
  *
- * Copyright (c) 2004, Mikael Grev, MiG InfoCom AB. (base64 @ miginfocom . com)
+ * Copyright (c) 2004, Mikael Grev, MiG InfoCom AB. (base64@miginfocom.com)
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without modification,
  * are permitted provided that the following conditions are met:
  * Redistributions of source code must retain the above copyright notice, this list
- * of conditions and the following disclaimer.
+ * Of conditions and the following disclaimer.
  * Redistributions in binary form must reproduce the above copyright notice, this
- * list of conditions and the following disclaimer in the documentation and/or other
- * materials provided with the distribution.
+ *Liist of conditions and the following disclaimer in the documentation and/or other
+ * Materials provided with the distribution.
  * Neither the name of the MiG InfoCom AB nor the names of its contributors may be
  * used to endorse or promote products derived from this software without specific
- * prior written permission.
+ * Prior written permission.
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -87,9 +87,9 @@ public class Base64
 
     /** Encodes a raw byte array into a BASE64 <code>char[]</code> representation i accordance with RFC 2045.
      * @param sArr The bytes to convert. If <code>null</code> or length 0 an empty array will be returned.
-     * @param lineSep Optional "\r\n" after 76 characters, unless end of file.<br>
+     * @param lineSep Optional "\r\n" after 76 characters, unless end of file. <br>
      * No line separator will be in breach of RFC 2045 which specifies max 76 per line but will be a
-     * little faster.
+     * Little faster.
      * @return A BASE64 encoded array. Never <code>null</code>.
      */
     public final static char[] encodeToChar(byte[] sArr, boolean lineSep)
@@ -126,7 +126,7 @@ public class Base64
         // Pad and encode last bits if source isn't even 24 bits.
         int left = sLen - eLen; // 0 - 2.
         if (left > 0) {
-            // Prepare the int
+            // prepare the int
             int i = ((sArr[eLen] & 0xff) << 10) | (left == 2 ? ((sArr[sLen - 1] & 0xff) << 2) : 0);
 
             // Set last four chars
@@ -139,10 +139,10 @@ public class Base64
     }
 
     /** decodes a BASE64 encoded char array. All illegal characters will be ignored and can handle both arrays with
-     * and without line separators.
+     * And without line separators.
      * @param sArr The source array. <code>null</code> or length 0 will return an empty array.
-     * @return The decoded array of bytes. May be of length 0. Will be <code>null</code> if the legal characters
-     * (including '=') isn't divisible by 4.  (I.e. definitely corrupted).
+     * @return the decoded array of bytes.  May be of length 0. Will be <code>null</code> if the legal characters
+     * (including '=') isn't divisible by 4.  (i.e. definitely corrupted).
      */
     public final static byte[] decode(char[] sArr)
     {
@@ -226,13 +226,13 @@ public class Base64
         int len = ((cCnt - sepCnt) * 6 >> 3) - pad; // The number of decoded bytes
         byte[] dArr = new byte[len];       // Preallocate byte[] of exact length
 
-        // Decode all but the last 0 - 2 bytes.
+        // decode all but the last 0 - 2 bytes.
         int d = 0;
         for (int cc = 0, eLen = (len / 3) * 3; d < eLen;) {
-            // Assemble three bytes into an int from four "valid" characters.
+            // assemble three bytes into an int from four "valid" characters.
             int i = IA[sArr[sIx++]] << 18 | IA[sArr[sIx++]] << 12 | IA[sArr[sIx++]] << 6 | IA[sArr[sIx++]];
 
-            // Add the bytes
+            // add the bytes
             dArr[d++] = (byte) (i >> 16);
             dArr[d++] = (byte) (i >> 8);
             dArr[d++] = (byte) i;
@@ -245,7 +245,7 @@ public class Base64
         }
 
         if (d < len) {
-            // Decode last 1-3 bytes (incl '=') into 1-3 bytes
+            // decode last 1-3 bytes (incl '=') into 1-3 bytes
             int i = 0;
             for (int j = 0; sIx <= eIx - pad; j++)
                 i |= IA[sArr[sIx++]] << (18 - j * 6);
@@ -258,11 +258,11 @@ public class Base64
     }
 
     // ****************************************************************************************
-    // *  byte[] version
+    // * byte[] version
     // ****************************************************************************************
 
     /** Encodes a raw byte array into a BASE64 <code>byte[]</code> representation i accordance with RFC 2045.
-     * @param sArr The bytes to convert. If <code>null</code> or length 0 an empty array will be returned.
+     * @param sArr the bytes to convert. If <code>null</code> or length 0 an empty array will be returned.
      * @param lineSep Optional "\r\n" after 76 characters, unless end of file.<br>
      * No line separator will be in breach of RFC 2045 which specifies max 76 per line but will be a
      * little faster.
@@ -280,18 +280,18 @@ public class Base64
         int dLen = cCnt + (lineSep ? (cCnt - 1) / 76 << 1 : 0); // Length of returned array
         byte[] dArr = new byte[dLen];
 
-        // Encode even 24-bits
+        // encode even 24-bits
         for (int s = 0, d = 0, cc = 0; s < eLen;) {
             // Copy next three bytes into lower 24 bits of int, paying attention to sign.
             int i = (sArr[s++] & 0xff) << 16 | (sArr[s++] & 0xff) << 8 | (sArr[s++] & 0xff);
 
-            // Encode the int into four chars
+            // encode the int into four chars
             dArr[d++] = (byte) CA[(i >>> 18) & 0x3f];
             dArr[d++] = (byte) CA[(i >>> 12) & 0x3f];
             dArr[d++] = (byte) CA[(i >>> 6) & 0x3f];
             dArr[d++] = (byte) CA[i & 0x3f];
 
-            // Add optional line separator
+            // add optional line separator
             if (lineSep && ++cc == 19 && d < dLen - 2) {
                 dArr[d++] = '\r';
                 dArr[d++] = '\n';
@@ -302,7 +302,7 @@ public class Base64
         // Pad and encode last bits if source isn't an even 24 bits.
         int left = sLen - eLen; // 0 - 2.
         if (left > 0) {
-            // Prepare the int
+            // prepare the int
             int i = ((sArr[eLen] & 0xff) << 10) | (left == 2 ? ((sArr[sLen - 1] & 0xff) << 2) : 0);
 
             // Set last four chars
@@ -315,9 +315,9 @@ public class Base64
     }
 
     /** decodes a BASE64 encoded byte array. All illegal characters will be ignored and can handle both arrays with
-     * and without line separators.
-     * @param sArr The source array. Length 0 will return an empty array. <code>null</code> will throw an exception.
-     * @return The decoded array of bytes. May be of length 0. Will be <code>null</code> if the legal characters
+     * And without line separators.
+     * @param sArr the source array. Length 0 will return an empty array. <code>null</code> will throw an exception.
+     * @return the decoded array of bytes. May be of length 0. Will be <code>null</code> if the legal characters
      * (including '=') isn't divisible by 4. (I.e. definitely corrupted).
      */
     public final static byte[] decode(byte[] sArr)
@@ -346,7 +346,7 @@ public class Base64
         byte[] dArr = new byte[len];       // Preallocate byte[] of exact length
 
         for (int s = 0, d = 0; d < len;) {
-            // Assemble three bytes into an int from four "valid" characters.
+            // assemble three bytes into an int from four "valid" characters.
             int i = 0;
             for (int j = 0; j < 4; j++) {   // j only increased if a valid char was found.
                 int c = IA[sArr[s++] & 0xff];
@@ -356,7 +356,7 @@ public class Base64
                     j--;
             }
 
-            // Add the bytes
+            // add the bytes
             dArr[d++] = (byte) (i >> 16);
             if (d < len) {
                 dArr[d++]= (byte) (i >> 8);
@@ -370,13 +370,13 @@ public class Base64
 
 
     /** decodes a BASE64 encoded byte array that is known to be resonably well formatted. The method is about twice as
-     * fast as {@link #decode(byte[])}. The preconditions are:<br>
-     * + The array must have a line length of 76 chars OR no line separators at all (one line).<br>
+     * fast as {@link #decode(byte[])}. The preconditions are :<br>
+     * + The array must have a line length of 76 chars OR no line separators at all (one line). <br>
      * + Line separator must be "\r\n", as specified in RFC 2045
-     * + The array must not contain illegal characters within the encoded string<br>
+     * + the array must not contain illegal characters within the encoded string <br>
      * + The array CAN have illegal characters at the beginning and end, those will be dealt with appropriately.<br>
      * @param sArr The source array. Length 0 will return an empty array. <code>null</code> will throw an exception.
-     * @return The decoded array of bytes. May be of length 0.
+     * @return the decoded array of bytes. May be of length 0.
      */
     public final static byte[] decodeFast(byte[] sArr)
     {
@@ -403,13 +403,13 @@ public class Base64
         int len = ((cCnt - sepCnt) * 6 >> 3) - pad; // The number of decoded bytes
         byte[] dArr = new byte[len];       // Preallocate byte[] of exact length
 
-        // Decode all but the last 0 - 2 bytes.
+        // decode all but the last 0 - 2 bytes.
         int d = 0;
         for (int cc = 0, eLen = (len / 3) * 3; d < eLen;) {
-            // Assemble three bytes into an int from four "valid" characters.
+            // assemble three bytes into an int from four "valid" characters.
             int i = IA[sArr[sIx++]] << 18 | IA[sArr[sIx++]] << 12 | IA[sArr[sIx++]] << 6 | IA[sArr[sIx++]];
 
-            // Add the bytes
+            // add the bytes
             dArr[d++] = (byte) (i >> 16);
             dArr[d++] = (byte) (i >> 8);
             dArr[d++] = (byte) i;
@@ -422,7 +422,7 @@ public class Base64
         }
 
         if (d < len) {
-            // Decode last 1-3 bytes (incl '=') into 1-3 bytes
+            // decode last 1-3 bytes (incl '=') into 1-3 bytes
             int i = 0;
             for (int j = 0; sIx <= eIx - pad; j++)
                 i |= IA[sArr[sIx++]] << (18 - j * 6);
@@ -438,11 +438,11 @@ public class Base64
     // * String version
     // ****************************************************************************************
 
-    /** Encodes a raw byte array into a BASE64 <code>String</code> representation i accordance with RFC 2045.
-     * @param sArr The bytes to convert. If <code>null</code> or length 0 an empty array will be returned.
+    /** encodes a raw byte array into a BASE64 <code>String</code> representation i accordance with RFC 2045.
+     * @param sArr the bytes to convert. If <code>null</code> or length 0 an empty array will be returned.
      * @param lineSep Optional "\r\n" after 76 characters, unless end of file.<br>
      * No line separator will be in breach of RFC 2045 which specifies max 76 per line but will be a
-     * little faster.
+     * Little faster.
      * @return A BASE64 encoded array. Never <code>null</code>.
      */
     public final static String encodeToString(byte[] sArr, boolean lineSep)
@@ -451,12 +451,12 @@ public class Base64
         return new String(encodeToChar(sArr, lineSep));
     }
 
-    /** Decodes a BASE64 encoded <code>String</code>. All illegal characters will be ignored and can handle both strings with
-     * and without line separators.<br>
+    /** decodes a BASE64 encoded <code>String</code>. All illegal characters will be ignored and can handle both strings with
+     * And without line separators. <br>
      * <b>Note!</b> It can be up to about 2x the speed to call <code>decode(str.toCharArray())</code> instead. That
      * will create a temporary array though. This version will use <code>str.charAt(i)</code> to iterate the string.
      * @param str The source string. <code>null</code> or length 0 will return an empty array.
-     * @return The decoded array of bytes. May be of length 0. Will be <code>null</code> if the legal characters
+     * @return the decoded array of bytes. May be of length 0. Will be <code>null</code> if the legal characters
      * (including '=') isn't divisible by 4.  (I.e. definitely corrupted).
      */
     public final static byte[] decode(String str)
@@ -488,7 +488,7 @@ public class Base64
         byte[] dArr = new byte[len];       // Preallocate byte[] of exact length
 
         for (int s = 0, d = 0; d < len;) {
-            // Assemble three bytes into an int from four "valid" characters.
+            // assemble three bytes into an int from four "valid" characters.
             int i = 0;
             for (int j = 0; j < 4; j++) {   // j only increased if a valid char was found.
                 int c = IA[str.charAt(s++)];
@@ -497,7 +497,7 @@ public class Base64
                 else
                     j--;
             }
-            // Add the bytes
+            // add the bytes
             dArr[d++] = (byte) (i >> 16);
             if (d < len) {
                 dArr[d++]= (byte) (i >> 8);
@@ -508,14 +508,14 @@ public class Base64
         return dArr;
     }
 
-    /** Decodes a BASE64 encoded string that is known to be reasonably well formatted. The method is about twice as
+    /** decodes a BASE64 encoded string that is known to be reasonably well formatted. The method is about twice as
      * fast as {@link #decode(String)}. The preconditions are:<br>
      * + The array must have a line length of 76 chars OR no line separators at all (one line).<br>
      * + Line separator must be "\r\n", as specified in RFC 2045
      * + The array must not contain illegal characters within the encoded string<br>
-     * + The array CAN have illegal characters at the beginning and end, those will be dealt with appropriately.<br>
-     * @param s The source string. Length 0 will return an empty array. <code>null</code> will throw an exception.
-     * @return The decoded array of bytes. May be of length 0.
+     * + The array CAN have illegal characters at the beginning and end, those will be dealt with appropriately. <br>
+     * @param s the source string. Length 0 will return an empty array. <code>null</code> will throw an exception.
+     * @return the decoded array of bytes. May be of length 0.
      */
     public final static byte[] decodeFast(String s)
     {
@@ -542,13 +542,13 @@ public class Base64
         int len = ((cCnt - sepCnt) * 6 >> 3) - pad; // The number of decoded bytes
         byte[] dArr = new byte[len];       // Preallocate byte[] of exact length
 
-        // Decode all but the last 0 - 2 bytes.
+        // decode all but the last 0 - 2 bytes.
         int d = 0;
         for (int cc = 0, eLen = (len / 3) * 3; d < eLen;) {
-            // Assemble three bytes into an int from four "valid" characters.
+            // assemble three bytes into an int from four "valid" characters.
             int i = IA[s.charAt(sIx++)] << 18 | IA[s.charAt(sIx++)] << 12 | IA[s.charAt(sIx++)] << 6 | IA[s.charAt(sIx++)];
 
-            // Add the bytes
+            // add the bytes
             dArr[d++] = (byte) (i >> 16);
             dArr[d++] = (byte) (i >> 8);
             dArr[d++] = (byte) i;
@@ -561,7 +561,7 @@ public class Base64
         }
 
         if (d < len) {
-            // Decode last 1-3 bytes (incl '=') into 1-3 bytes
+            // decode last 1-3 bytes (incl '=') into 1-3 bytes
             int i = 0;
             for (int j = 0; sIx <= eIx - pad; j++)
                 i |= IA[s.charAt(sIx++)] << (18 - j * 6);
